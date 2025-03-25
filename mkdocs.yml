@@ -55,6 +55,9 @@ plugins:
 
 nav:
   - Home: home.md
+  - Features:
+    - Feature List: dressca-frontend-feature-list.md
+    - User Stories: dressca-frontend-user-stories.md
   - Architecture:
     - Frontend: frontend-architecture.md
   - Implementation:
