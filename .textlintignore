@@ -1,5 +1,0 @@
-# SpotBugsで自動生成されるテキストファイルをテスト対象から除外
-samples/**/spotbugs*.txt
-
-# third-party-licenses フォルダーはコピーしたファイルを配置するため、テスト対象から除外
-third-party-licenses/**
