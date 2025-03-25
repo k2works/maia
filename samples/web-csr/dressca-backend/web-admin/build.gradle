@@ -54,7 +54,7 @@ openApi {
     outputDir.set(file("$rootDir/api-docs/web-admin"))
     outputFileName.set("api-specification.json")
 }
-tasks.register('bootRunDev', org.springframework.boot.gradle.tasks.run.BootRun){
+tasks.register('bootRunDevWebAdmin', org.springframework.boot.gradle.tasks.run.BootRun){
 	group = 'application'
 	description = 'Runs this project as a Spring Boot Application using local profile.'
 	args = ["--spring.profiles.active=local"]
