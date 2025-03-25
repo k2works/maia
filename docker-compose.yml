@@ -39,17 +39,6 @@ services:
       - "./ops/docker/dynamodb/data:/home/dynamodblocal/data"
     working_dir: /home/dynamodblocal
 
-  schemaspy_mysql:
-    build:
-      context: ops/docker
-      dockerfile: ./schemaspy/Dockerfile
-    volumes:
-      - ./ops/docker/schemaspy/output/mysql:/output
-      - ./ops/docker/schemaspy/config:/config
-    container_name: "schemaspy_local_mysql"
-    command: [ "-all", "-configFile", "/config/mysql/schemaspy.properties" ]
-    links:
-      - db_mysql
   schemaspy_postgresql:
     build:
       context: ops/docker
@@ -88,6 +77,7 @@ services:
     links:
       - wiki_db
       - plantuml
+      - mkdocs
     ports:
       - "80:3000"
 
