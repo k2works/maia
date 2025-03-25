@@ -55,3 +55,9 @@ plugins:
 
 nav:
   - Home: home.md
+  - Architecture:
+    - Frontend: frontend-architecture.md
+  - Implementation:
+    - Dressca Frontend: samples-dressca-frontend.md
+    - Dressca Frontend Admin: samples-dressca-frontend-admin.md
+    - Dressca Frontend Consumer: samples-dressca-frontend-consumer.md
